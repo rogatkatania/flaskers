@@ -4,7 +4,7 @@ from ftplib import FTP
 
 app = Flask(__name__)
 
-@app.route('/check_access', methods=['GET'])
+@app.route('/', methods=['GET'])
 def check_access():
     ip = request.args.get('ip')
     port = int(request.args.get('port'))
